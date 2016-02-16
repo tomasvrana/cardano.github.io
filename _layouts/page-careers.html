@@ -1,0 +1,63 @@
+---
+layout: page-careers
+---       
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div id="middlerow" class="middlerow">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-">
+                    <div id="io_loader">
+                        <div id="io_load">
+                            <div class="row fader jobs_page">
+                                <div class="col-lg-4 col-md-4 col-sm-5 sidecol uppercase">
+
+                                    <ul>
+                                    {% for post in site.categories['jobs'] %}
+                                    {% if page.language == post.language %}
+                                        <li><a class="io_ajax_load" data-target="#jobs_loader" data-load="#jobs_load" href="{{ site.baseurl }}{{ post.permalink }}">{{ post.title }}</a></li>
+                                    {% endif %}
+                                    {% endfor %}
+                                    </ul>
+
+                                    <br>
+
+                                </div>
+                                <div class="maincol col-lg-8 col-md-8 col-sm-7">
+                                    <div id="jobs_loader">
+                                        <div id="jobs_load">
+
+                                                                                
+                                            <div class="jobpost" id="post-104">
+                                                <div class="entry">
+                                                    <div class="text">
+
+                                                       
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

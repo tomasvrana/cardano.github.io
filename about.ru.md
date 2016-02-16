@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: page-about
 title: О нас
+language: ru
 permalink: /about/ru/
+defaulturl: /about/
 slug: about
 ---
 

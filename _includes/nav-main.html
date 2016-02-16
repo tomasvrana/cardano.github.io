@@ -1,5 +1,6 @@
+
                 <ul id="menu-top" class="nav navbar-nav navbar-right uppercase">
-                  <li class="home active"><a title="Home" href="/">Home</a></li>
-                  <li class="about"><a title="About" href="/about/">About</a></li>
-                  <li class="career"><a title="Careers" href="/careers/">Careers</a></li>
+                  <li class="home active"><a title="Home" href="{{ site.baseurl }}/{% if page.language != 'en' %}{{ page.language }}{% endif %}">{{ site.data.i18n[page.language].home }}</a></li>
+                  <li class="about"><a title="About" href="{{ site.baseurl }}/about/{% if page.language != 'en' %}{{ page.language }}{% endif %}">{{ site.data.i18n[page.language].about }}</a></li>
+                  <li class="career"><a title="Careers" href="{{ site.baseurl }}/careers/{% if page.language != 'en' %}{{ page.language }}{% endif %}">{{ site.data.i18n[page.language].careers }}</a></li>
                 </ul>

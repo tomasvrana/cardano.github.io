@@ -10,8 +10,9 @@ title: Input Output - HongKong
 email: admin@iohk.io
 description: > # this means to ignore newlines until "baseurl:"
   New age tech
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/iohk.io" # the subpath of your site, e.g. /blog
 url: "http://iohk.io" # the base hostname & protocol for your site
+permalink: /:categories/:title
 twitter_username: InputOutput
 github_username:  jekyll
 

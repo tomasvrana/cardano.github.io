@@ -2,7 +2,7 @@
        
     </div><!-- /#main-body -->
 
-       <div id="footrow" class="footrow">
+    <div id="footrow" class="footrow">
         <footer>
             <div class="container">
             
@@ -16,19 +16,19 @@
 
                           <a title="LinkedIn" href="https://www.linkedin.com/company/input-output-global">LinkedIn</a>
                           <a title="Twitter" href="https://twitter.com/InputOuput">Twitter</a>
-                          <a data-toggle="modal" href="#subscribe_to_newsletter">Newsletter</a>
+                          <a data-toggle="modal" href="#subscribe_to_newsletter">{{ site.data.i18n[page.language].newsletter }}</a>
 
 
                                                                                   
                           <ul class="language-chooser" id="lang-chooser">
-                            <li class="active"><a href="/" class="" title="English"><span>English</span></a></li>
-                            <li><a href="/{{ page.slug }}/ja/" class="" title="日本語"><span>日本語</span></a></li>
-                            <li><a href="/{{ page.slug }}/ru/" class="" title="Русский"><span>Русский</span></a></li>
+                            <li class="en"><a href="{{ site.baseurl }}{{ page.defaulturl }}" class="" title="English"><span class="none">English</span> <img src="{{ site.baseurl }}/images/flags/en.png" width="19" height="14" alt="" /></a></li>
+                            <li class="ja"><a href="{{ site.baseurl }}{{ page.defaulturl }}ja/" class="" title="日本語"><span class="none">日本語</span> <img src="{{ site.baseurl }}/images/flags/ja.png" width="19" height="14" alt="" /></a></li>
+                            <li class="ru"><a href="{{ site.baseurl }}{{ page.defaulturl }}ru/" class="" title="Русский"><span class="none">Русский</span> <img src="{{ site.baseurl }}/images/flags/ru.png" width="19" height="14" alt="" /></a></li>
                           </ul>
                           
                       </div>
 
-                      <p class="small uppercase c_555 copy">&copy; 2016. All Rights Reserved Input Output</p>
+                      <p class="small uppercase c_555 copy">&copy; 2016 {{ site.data.i18n[page.language].rights }} Input Output</p>
 
                     </div>
                 </div>
@@ -44,31 +44,31 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="">Subscribe to <b>IOHK</b> Newsletter</h4>
+                        <h4 class="modal-title" id="">{{ site.data.i18n[page.language].subscribe_to_nl }}</h4>
                     </div>
                     <div class="modal-body">
 
 
 
-    <form action=""  class="sendpress-signup" method="post">
-        <input type="hidden" name="nr" value="widget"/>
-        <input type="hidden" name="sp_list" id="list" class="sp_list" value="116" />
+                        <form action=""  class="sendpress-signup" method="post">
+                            <input type="hidden" name="nr" value="widget"/>
+                            <input type="hidden" name="sp_list" id="list" class="sp_list" value="116" />
 
-        <div id="exists" style="display:none;">You've already signed up, Thanks!</div>
-        <div id="error"></div>
-        <div id="thanks" style="display:none;">Check your inbox now to confirm your subscription.</div>
-        <div id="form-wrap">
-            <div class="input-group input-group-lg">
-                <input placeholder="your@email.com"  class="sp_email form-control" type="email" required name="sp_email" value="">
-                <span class="input-group-btn">
-                    <button class="btn btn-primary" type="submit">Subscribe<img class="ajaxloader" style="display:none;"  src="/images/redbg-ajax.gif" /></button>
-                </span>
-            </div><!-- /input-group -->
+                            <div id="exists" style="display:none;">You've already signed up, Thanks!</div>
+                            <div id="error"></div>
+                            <div id="thanks" style="display:none;">Check your inbox now to confirm your subscription.</div>
+                            <div id="form-wrap">
+                                <div class="input-group input-group-lg">
+                                    <input placeholder="your@email.com"  class="sp_email form-control" type="email" required name="sp_email" value="">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="submit">{{ site.data.i18n[page.language].subscribe }} <img class="ajaxloader" style="display:none;"  src="{{ site.baseurl }}/images/redbg-ajax.gif" /></button>
+                                    </span>
+                                </div><!-- /input-group -->
 
-        </div>
+                            </div>
 
 
-    </form>
+                        </form>
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-    </div><!-- /#page -->
+</div><!-- /#page -->
 
 
 

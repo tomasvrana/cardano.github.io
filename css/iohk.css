@@ -1,5 +1,5 @@
 html{background:#090001}
-body{background:#090001 url('/images/bg.jpg') top center no-repeat; font-family: 'Roboto'; font-weight: 300}
+body{background:#090001 url('images/bg.jpg') top center no-repeat; font-family: 'Roboto'; font-weight: 300}
 body.io_globe_in{background-position:center -205px}
 
 .btn-default{background:transparent;color:#fff;-webkit-border-radius: 00px;border-radius:00px;}
@@ -223,7 +223,7 @@ html.js .team #io_load .entry,
 html.js .about #io_load .entry {width:100%}
 html.js .about #io_load .entry .text{margin:0px 0 0 35%;width:65%}
 html.js .about #io_load .entry h2{position:absolute;width:26%;z-index: 28;border-top:2px solid #f00;font-weight:300;letter-spacing:.1em; margin:7px 0 0 -27.7%;padding:6px 0;text-transform:uppercase;font-size:115%}
-html.js .about #io_load .entry p{ line-height: 1.9; font-weight:200; padding: 0 10px 0 0; margin-bottom: 20px}
+html.js .about #io_load .entry p{ line-height: 1.9; font-weight:300; padding: 0 10px 0 0; margin-bottom: 20px}
 
 
 @media (max-width:1200px) and (min-height:500px){

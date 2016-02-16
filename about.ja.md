@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: page-about
 title: IOHKについて
+language: ja
 permalink: /about/ja/
+defaulturl: /about/
 slug: about
 ---
 <h2><span id="result_box" class="" lang="ja" tabindex="-1"><span title="&lt;|&lt; Who is IOHK?">IOHKとは？</span></span></h2>

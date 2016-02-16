@@ -1,7 +1,9 @@
 ---
 layout: page-about
 title: About
+language: en
 permalink: /about/
+defaulturl: /about/
 slug: about
 ---
 <h2>What is IOHK?</h2>

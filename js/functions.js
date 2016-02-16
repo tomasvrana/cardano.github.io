@@ -36,7 +36,10 @@ if(lowerie){
 	function io_retitle() {
 		var h1 = $(".entry").attr('title');
 		if(chosen == 'team'){
-			h1 = '<span class="flex-custom"><a href="javascript:;" class="nav-founders">Founders</a>/<a href="javascript:;" class="nav-team">Core team</a></span>';
+			h1_arr = h1.split('/');
+
+
+			h1 = '<span class="flex-custom"><a href="javascript:;" class="nav-founders">'+h1_arr[0]+'</a>/<a href="javascript:;" class="nav-team">'+h1_arr[1]+'</a></span>';
 		}
 		$("h1").html(h1);
 	}
@@ -46,7 +49,7 @@ if(lowerie){
 			var lang = $(this).attr('title');
 			lang = lang.substr(lang.length-4,lang.length);
 			lang = lang.substr(1,2);
-			$(this).attr('href','/'+lang+'/'+chosen);
+			//$(this).attr('href','/'+lang+'/'+chosen);
 		});
 	}
 
@@ -227,7 +230,7 @@ if(lowerie){
 		if(!$("body").hasClass('introin')){
 		 	$("body").addClass('introin');
 		}
-
+/*
 		var hashloc = location.hash.match(/wpcf7/);
 				
 		if(hashloc != null){
@@ -237,15 +240,15 @@ if(lowerie){
 			$(".apply_now_button").hide(0);
 			$(".io_reply_form").css({display:'block'});
 		}	
-
+*/
 	}
 
 	function io_set_form(){
-		$("#your-name").attr('placeholder','Full Name');
-		$("#your-email").attr('placeholder','Your E-mail');
-		$("#your-phone").attr('placeholder','Phone Number');
-		$("#your-subject").attr('placeholder','Subject');
-		$("#your-message").attr('placeholder','Your message');
+		$("#your-name").attr('placeholder',$("#your-name").prev().text());
+		$("#your-email").attr('placeholder',$("#your-email").prev().text());
+		$("#your-phone").attr('placeholder',$("#your-phone").prev().text());
+		$("#your-subject").attr('placeholder',$("#your-subject").prev().text());
+		$("#your-message").attr('placeholder',$("#your-message").prev().text());
 		if(chosen == jobspage){
 			$("#your-message").attr('placeholder','Your cover letter');
 		}

@@ -56,7 +56,29 @@ hr.sm{ width: 200px; margin:1em auto}
 ul.typenone{list-style-type:none}
 ul.flat li{display:inline-block}
 
-.c_f00{color:#f00;}
+.c_000{color:#000;}
+.c_999{color:#999;}
+.c_888{color:#888;}
+.c_777{color:#777;}
+.c_666{color:#666;}
+.c_555{color:#555;}
+.c_444{color:#444;}
+.c_333{color:#333;}
+.c_222{color:#222;}
+.c_111{color:#111;}
+.c_aaa{color:#aaa;}
+.bg_000{background:#000;}
+.bg_999{background:#999;}
+.bg_888{background:#888;}
+.bg_777{background:#777;}
+.bg_666{background:#666;}
+.bg_555{background:#555;}
+.bg_444{background:#444;}
+.bg_333{background:#333;}
+.bg_222{background:#222;}
+.bg_111{background:#111;}
+.bg_aaa{background:#aaa;}
+.bg_f00{color:#f00;}
 .bg_f00{background:#f00;}
 
 

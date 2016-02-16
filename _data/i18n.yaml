@@ -8,6 +8,7 @@ en:
     newsletter: Newsletter
     submit: Submit
     submit_application: Submit Application
+    apply_now: Apply Now!
     your_cv: Your CV
     subscribe: Subscribe
     subscribe_to_nl: Subscribe to IOHK Newsletter
@@ -37,6 +38,7 @@ ja:
     newsletter: ニュースレター
     submit: 提出します
     submit_application: 申請書を提出
+    apply_now: 今すぐ申し込みます！
     your_cv: あなたの履歴書
     subscribe: 申し込む
     subscribe_to_nl: IOHKニュースレターの購読
@@ -66,6 +68,7 @@ ru:
     newsletter: Новостная рассылка
     submit: Отправить
     submit_application: Подать заявку
+    apply_now: Применить сейчас!
     your_cv: Ваше резюме
     subscribe: Подписывайся
     subscribe_to_nl: Подписаться на новости IOHK

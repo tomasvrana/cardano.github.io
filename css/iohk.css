@@ -226,6 +226,14 @@ html.js .about #io_load .entry h2{position:absolute;width:26%;z-index: 28;border
 html.js .about #io_load .entry p{ line-height: 1.9; font-weight:300; padding: 0 10px 0 0; margin-bottom: 20px}
 
 
+html.js #io_load .entry .text ul{padding:0 0 0 0px}
+html.js #io_load .entry .text ul{list-style-type: none;line-height: 1.4;}
+html.js #io_load .entry .text ul li{line-height: 1.6;}
+html.js #io_load .entry .text li:before {content: "»";float:left;width:10px;color: red;}
+
+
+
+
 @media (max-width:1200px) and (min-height:500px){
 html.js .about #io_load .entry h2{width:25%;margin:7px 0 0 -26.14%;}
 }

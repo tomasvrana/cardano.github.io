@@ -53,36 +53,36 @@ layout: page-contact
                                                     <div class="row contact_form">
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].name }}</label>
-                                                                <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="your-name" aria-required="true" aria-invalid="false" />
+                                                                <label>{{ site.data.i18n[page.language].name }}</label><br />
+                                                                <input type="text" name="your-name" value="" placeholder="{{ site.data.i18n[page.language].name }}" size="40" class="required form-control" id="your-name" aria-required="true" aria-invalid="false" />
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].email }}</label>
-                                                                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" />
+                                                                <label>{{ site.data.i18n[page.language].email }}</label><br />
+                                                                <input type="email" name="your-email" value="" placeholder="{{ site.data.i18n[page.language].email }}" size="40" class="required validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" />
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].phone }}</label>
-                                                                <input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="your-phone" aria-required="true" aria-invalid="false" />
+                                                                <label>{{ site.data.i18n[page.language].phone }}</label><br />
+                                                                <input type="text" name="your-phone" value="" placeholder="{{ site.data.i18n[page.language].phone }}" size="40" class="required form-control" id="your-phone" aria-required="true" aria-invalid="false" />
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].subject }}</label>
-                                                                <input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="your-subject" aria-required="true" aria-invalid="false" />
+                                                                <label>{{ site.data.i18n[page.language].subject }}</label><br />
+                                                                <input type="text" name="your-subject" value="" placeholder="{{ site.data.i18n[page.language].subject }}" size="40" class="required form-control" id="your-subject" aria-required="true" aria-invalid="false" />
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-12">
                                                             <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].message }}</label>
-                                                                <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control" id="your-message" aria-invalid="false"></textarea>
+                                                                <label>{{ site.data.i18n[page.language].message }}</label><br />
+                                                                <textarea name="your-message" cols="40" rows="10" placeholder="{{ site.data.i18n[page.language].message }}" class="form-control" id="your-message" aria-invalid="false"></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-12">
-                                                            <input type="submit" value="{{ site.data.i18n[page.language].submit }}" class="wpcf7-form-control wpcf7-submit btn btn-lg btn-primary uppercase" />
+                                                            <input type="submit" value="{{ site.data.i18n[page.language].submit }}" class="submit btn btn-lg btn-primary uppercase" />
                                                         </div>
                                                     </div>
 

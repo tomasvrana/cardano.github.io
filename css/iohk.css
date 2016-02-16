@@ -275,10 +275,10 @@ html.js .about #io_load .entry h2{width:100%;margin:7px 0 0 0%;position:static;}
 
   html.js .welcome  { padding:100px 200px 120px 200px}
 
-  html.js #io_loader .wpcf7-form label{ display: none}
-  html.js #io_loader .wpcf7-form #your-message{ height: 150px}
+  html.js #io_loader .form label{ display: none}
+  html.js #io_loader .form #your-message{ height: 150px}
 
-  html.js #io_loader .wpcf7-form { width: 90%}
+  html.js #io_loader .form { width: 90%}
 
 
   html.js { overflow-y:scroll;}

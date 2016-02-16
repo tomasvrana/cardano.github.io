@@ -94,7 +94,6 @@ if(lowerie){
 			$(target).load($(this).attr('href')+' '+rel,function(){
 				$(target+" .fader").animate({opacity:1},500);
 				io_resize();
-				io_set_form();
 				lowievar = true;
 
 				var hashloc = location.hash.match(/wpcf7/);
@@ -158,7 +157,6 @@ if(lowerie){
 	function io_which_way_alter(){
 		//alert("sA");
 		io_qtranslate_update();
-		io_set_form();
 		if(chosen == projectspage){
 			//io_globe();
 		}
@@ -241,18 +239,6 @@ if(lowerie){
 			$(".io_reply_form").css({display:'block'});
 		}	
 */
-	}
-
-	function io_set_form(){
-		$("#your-name").attr('placeholder',$("#your-name").prev().text());
-		$("#your-email").attr('placeholder',$("#your-email").prev().text());
-		$("#your-phone").attr('placeholder',$("#your-phone").prev().text());
-		$("#your-subject").attr('placeholder',$("#your-subject").prev().text());
-		$("#your-message").attr('placeholder',$("#your-message").prev().text());
-		if(chosen == jobspage){
-			$("#your-message").attr('placeholder','Your cover letter');
-		}
-
 	}
 
 	

@@ -12,6 +12,7 @@ if(lowerie){
 
 ;(function($) {
 	var choice = '';
+	var choiceurl = '';
 	var chosen = '';
 	var io_hist = new Object();
 
@@ -44,13 +45,20 @@ if(lowerie){
 		$("h1").html(h1);
 	}
 
-	function io_qtranslate_update() {
-		$("#qtranslate-chooser a").each(function(){
-			var lang = $(this).attr('title');
-			lang = lang.substr(lang.length-4,lang.length);
-			lang = lang.substr(1,2);
-			//$(this).attr('href','/'+lang+'/'+chosen);
-		});
+	function io_translate_update() {
+		if(choice != ''){
+			$("#lang-chooser a").each(function(){
+				var lang = $(this).attr('class');
+				if(lang == 'en'){
+					lang = '';
+				}
+				if(iolang == 'en'){
+					$(this).attr('href',choice+'/'+lang+'');
+				}else{
+					$(this).attr('href',choice.substr(0,choice.length-4)+'/'+lang+'');
+				}
+			});
+		}
 	}
 
 	function io_nav() {
@@ -79,9 +87,6 @@ if(lowerie){
 			var target = $(this).attr('data-target');
 			var rel = $(this).attr('data-load');
 			choice = urlchoice;
-			if(!$("body").hasClass('transsub')){
-			 	$("body").addClass('transsub');
-			}
 			$(".sidecol .active").removeClass('active');
 			$(this).parent().addClass('active');
 
@@ -90,57 +95,58 @@ if(lowerie){
 					document.location.href = urlchoice;
 				}
 			}
+			io_load_subpage(target,urlchoice,rel);
 
-			$(target).load($(this).attr('href')+' '+rel,function(){
-				$(target+" .fader").animate({opacity:1},500);
-				io_resize();
-				lowievar = true;
 
-				var hashloc = location.hash.match(/wpcf7/);
-				
-				if(hashloc != null){
-					$(".apply_now_button").hide(0);
-					$("#io_reply_form").show(0);
-				}				
-				$("#io_loader .fader .apply_now_button").click(function(){
-					io_resize();
-				});
-
-				//$(".wpcf7-form").wpcf7InitForm();
-
-				$("title").text($("h1").text()+' - '+homename);
-				if($("body").hasClass('transsub')){
-				 	$("body").removeClass('transsub');
-				}
-				if(chosen == jobspage){
-					$("#thejobposition").val($("h1").text());
-				}
-			});
 		});
 		$("#io_loader a.io_ajax_load:first").trigger('click');
 	}
 
+	function io_load_subpage(target,url,rel){
+		
+			if(!$("body").hasClass('transsub')){
+			 	$("body").addClass('transsub');
+			}
+			setTimeout(function(){
+				$(target).load(url+' '+rel,function(){
+					//$(target+" .fader").animate({opacity:1},500);
+					io_resize();
+					lowievar = true;
+
+					$("title").text($("h1").text()+' - '+homename);
+					if($("body").hasClass('transsub')){
+					 	$("body").removeClass('transsub');
+					}
+				}).delay(500);
+			},300);
+	}
+
 	function io_load_page(url){
+		choice = url;
 		if($("body").hasClass('transin')){
 		 	$("body").removeClass('transin');
 		}
-		//setTimeout(function(){
-		$("#io_loader").load(url+' #io_load',function(){
-			var url_a = url.split('/');
-			chosen = url_a[url_a.length-2];
-			io_nav();
-			io_resize();
-			$("#page").attr('class',chosen);
-			$("title").text($("h1").text()+' - '+homename);
-			io_retitle();
-			
-			if(!$("body").hasClass('transin')){
-			 	$("body").addClass('transin');
-			}
-			io_which_way_alter();
+		setTimeout(function(){
+			$("#io_loader").load(url+' #io_load',function(){
+				var url_a = url.split('/');
+				if(iolang == 'en'){
+					chosen = url_a[url_a.length-2];
+				}else{
+					chosen = url_a[url_a.length-3];
+				}
+				io_nav();
+				io_resize();
+				$("#page").attr('class',chosen);
+				$("title").text($("h1").text()+' - '+homename);
+				io_retitle();
+				
+				if(!$("body").hasClass('transin')){
+				 	$("body").addClass('transin');
+				}
+				io_which_way_alter();
 
-		});
-		//},1000);
+			});
+		},500);
 	}
 
 	var team_sec = 0;
@@ -155,8 +161,8 @@ if(lowerie){
 	}
 
 	function io_which_way_alter(){
-		//alert("sA");
-		io_qtranslate_update();
+		$("title").text($("h1").text()+' - '+homename);
+		io_translate_update();
 		if(chosen == projectspage){
 			//io_globe();
 		}

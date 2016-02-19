@@ -10,143 +10,37 @@ layout: page-contact
 
     {% include header.html %}
 
-    <div id="middlerow" class="middlerow">
+
+    <div id="main-body">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 topcol">
-                    <div id="io_loader">
-                        <div id="io_load">
+                <div class="col-lg-12 col-md-12 ">
                     
-                            <div class="title_block with_submenu">
-                                <h1 class="">{{ site.data.i18n[page.language].contact }}</h1>
-                                                            
-                                {% include nav-about.html %}
-                                          
+                    <div class="row fader">
+                        <div class="col-lg-3 col-md-4 col-sm-5 sidecol">
+                            <div class="text">
+                                <h2>{{ site.data.i18n[page.language].head_office }}</h2>
+                                <p>
+                                    First Floor, Millennium House,<br />
+                                    Victoria Road, Douglas,<br />
+                                    Isle of Man, IM2 4RW 
+                                </p>
                             </div>
+                        </div>
+                        <div class="maincol col-lg-9 col-md-8 col-sm-7">
+                            <div class="post" id="post-13">
+                                <div class="entry" title="{{ page.title }}">
 
-                            <div class="row fader">
-                                <div class="col-lg-3 col-md-4 col-sm-5 sidecol">
-                                    <div class="text">
-                                        <h2>{{ site.data.i18n[page.language].head_office }}</h2>
-                                        <p>
-                                            Rm. 3208 Central Plaza,<br />
-                                            18 Harbour Road<br />
-                                            Wanchai<br />
-                                            Honk Kong
-                                        </p>
-                                        <div class="io_social_tag">
-                                            <a href="https://www.linkedin.com/company/input-output-hik"><em class="fa fa-linkedin"></em></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="maincol col-lg-9 col-md-8 col-sm-7">
-
-                                    <div class="post" id="post-13">
-                                        <div class="entry" title="{{ page.title }}">
-
-                                            <div role="form" class="form" id="" lang="en-US" dir="ltr">
-
-
-                                                <form action="//io.vrana.org/send.php" method="post" class="form-contact">
-
-                                                    <div class="well bg_555 border0 info-success none">
-                                                        <h3 class="margin0">Thank you! Your message has been sent.</h3>
-                                                    </div>
-
-                                                    <div class="well bg_555 border0 info-warning none">
-                                                        <h3 class="margin0">Error!</h3>
-                                                    </div>
-
-                                                    <input type="hidden" name="iohk" value="mail" />
-
-                                                    <div class="row contact_form">
-                                                        <!--
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].name }}</label><br />
-                                                                <input type="text" name="your-name" value="" placeholder="{{ site.data.i18n[page.language].name }}" size="40" class="required form-control" id="your-name" aria-required="true" aria-invalid="false" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].email }}</label><br />
-                                                                <input type="email" name="your-email" value="" placeholder="{{ site.data.i18n[page.language].email }}" size="40" class="required validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].phone }}</label><br />
-                                                                <input type="text" name="your-phone" value="" placeholder="{{ site.data.i18n[page.language].phone }}" size="40" class="required form-control" id="your-phone" aria-required="true" aria-invalid="false" />
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].subject }}</label><br />
-                                                                <input type="text" name="your-subject" value="" placeholder="{{ site.data.i18n[page.language].subject }}" size="40" class="required form-control" id="your-subject" aria-required="true" aria-invalid="false" />
-                                                            </div>
-                                                        </div>
-                                                        -->
-        
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                <label>{{ site.data.i18n[page.language].message }}</label><br />
-                                                                <textarea name="message" cols="40" rows="10" placeholder="{{ site.data.i18n[page.language].message }}" class="form-control" id="your-message" aria-invalid="false"></textarea>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-sm-12">
-                                                            <input type="submit" value="{{ site.data.i18n[page.language].submit }}" class="submit btn btn-lg btn-primary uppercase" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
-
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br><br><br><br><br><br>
+                                    <iframe src="//forms.vrana.org/cf/contact.php?lang={{page.language}}" width="100%" height="600" border="0" style="border:0"></iframe>
 
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-    <script>
-
-        
-    jQuery(".form-contact").submit(function(e){
-        e.preventDefault();
-        var form_message = '';
-        
-        var postData = jQuery(this).serialize();
-        var formURL = jQuery(this).attr("action");
-                
-        jQuery.ajax({
-            type: 'POST',
-            url: formURL,
-            contentType: 'application/x-www-form-urlencoded',
-            data: postData,
-            success:function(data, textStatus, jqXHR){
-                console.log(data);
-                alert("ok");
-            },
-            error: function(jqXHR, textStatus, errorThrown){
-                console.log(jqXHR);
-                 alert("err");
-            }
-        });
-
-    });
-        
-    </script>
+    </div><!-- /#main-body -->
 
     {% include footer.html %}
 

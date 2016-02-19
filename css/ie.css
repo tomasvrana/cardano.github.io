@@ -30,3 +30,6 @@ html.js .about #io_load .entry h2{position:absolute;width:26%;z-index: 28;border
 
 
 .img-circle{-moz-border-radius:200px;-webkit-border-radius: 200px;border-radius: 200px;}
+
+
+form label{display: block !important}

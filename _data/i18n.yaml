@@ -11,22 +11,40 @@ en:
     apply_now: Apply Now!
     your_cv: Your CV
     subscribe: Subscribe
-    subscribe_to_nl: Subscribe to IOHK Newsletter
+    subscribe_to_nl: Subscribe to our Newsletter
+    subscribe_to_nl_desc: Subscribe to our newsletter and get all the foundation updates.
     rights: All Rights Reserved
     home: Home
     about: About
+    about_us: About us
     careers: Careers
     contact: Contact
+    contact_us: Contact us
+    visit_us: Visit us
     team: Team
-    founder: Founders
+    news: News
+    chairman: Chairman
+    founder: Founder
     founders: Founders
-    coreteam: Core team
-    chief_executive_officer: Chief Executive Officer
-    chief_strategy_officer: Chief Strategy Officer
-    chief_operations_officer: Chief Operations Officer
-    chief_communications_officer: Chief Communications Officer
-    chief_design_officer: Chief Design Officer
-    full_stack_developer: Full Stack Developer
+    home_of: Home of the Cardano Protocol
+    home_desc: The second tranche of the Ada sale has begun. Please contact your Attain distributor for more details.
+    home_sale_only:  Sale is only available to Japanese customers
+    sales_partner: Sales Partner
+    goals: Goals
+    goal_protect: "To Protect, Enhance and Evolve the Cardano Ecosystem"
+    goal_act: "To Act as a Cryptocurrency Standards Body"
+    goal_study: "To Study, Propose and Enact Cryptocurrency Regulation"
+    goal_serve: "To Serve as an Objective Organization for Enterprises to Join"
+    goal_educate: "To Aggregate, Educate and Grow the Cardano Community"
+    partnership_structure: Partnership structure
+    structure_gaming: Cardano Gaming Group
+    structure_gaming_desc: Game Development and White Label Solutions Partner
+    structure_io: Input Output
+    structure_io_desc: Protocol Development Partner
+    structure_attain: Attain Corporation
+    structure_attain_desc: Exclusive Exchange Partner
+    becoming_partner: Interested in Becoming a Partner?
+    executive_team: Executive Team
 
 ja:
     name: 名
@@ -41,49 +59,38 @@ ja:
     apply_now: 今すぐ申し込みます！
     your_cv: あなたの履歴書
     subscribe: 申し込む
-    subscribe_to_nl: IOHKニュースレターの購読
+    subscribe_to_nl: ニュースレターの購読
+    subscribe_to_nl_desc: ニュースレターを購読し、すべての基礎の更新プログラムを入手
     rights: 全著作権所有
     home: ホーム
     about: IOHKについて
+    about_us: 私たちに関しては
     careers: 求人
     contact: 連絡先
+    contact_us: お問い合わせ
+    visit_us: 私たちをご覧ください
     team: チーム
+    news: ニュース
+    chairman: 会長
     founder: 創業者
     founders: ファウンダーズ
-    coreteam: コアチーム
-    chief_executive_officer: 最高経営責任者
-    chief_strategy_officer: 最高戦略責任者
-    chief_operations_officer: 最高執行責任者
-    chief_communications_officer: チーフ・コミュニケーション・オフィサー
-    chief_design_officer: チーフデザインオフィサー
-    full_stack_developer: フルスタックの開発
+    home_of: カルダーノプロトコルのホーム
+    home_desc: エイダの販売の第二トランシェが始まりました。あなたの詳細については、販売代理店を達成しご連絡ください。
+    home_sale_only:  販売は、日本のお客様にのみご利用いただけます
+    sales_partner: 販売パートナー
+    goals: 目標
+    goal_protect: "カルダーノ生態系を保護強化と進化を"
+    goal_act: "Cryptocurrency標準化団体として機能するように"
+    goal_study: "勉強し、提案と制定Cryptocurrency規制"
+    goal_serve: "企業が参加するための客観的組織として機能します"
+    goal_educate: "カルダーノコミュニティを、集計教育と成長します"
+    partnership_structure: パートナーシップ構造
+    structure_gaming: カルダーノゲーミンググループ
+    structure_gaming_desc: ゲーム開発とホワイトラベルソリューションパートナー
+    structure_io: Input Output
+    structure_io_desc: プロトコルの開発パートナー
+    structure_attain: Attain Corporation
+    structure_attain_desc: 排他的取引パートナー
+    becoming_partner: パートナーになるでチェック！
+    executive_team: エグゼクティブチーム
 
-ru:
-    name: имя
-    phone: Телефон
-    email: Эл. адрес
-    subject: Предмет
-    message: Сообщение
-    head_office: Главный офис
-    newsletter: Новостная рассылка
-    submit: Отправить
-    submit_application: Подать заявку
-    apply_now: Применить сейчас!
-    your_cv: Ваше резюме
-    subscribe: Подписывайся
-    subscribe_to_nl: Подписаться на новости IOHK
-    rights: Все права защищены
-    home: Главная
-    about: О нас
-    careers: Карьера
-    contact: контакт
-    team: команда
-    founder: основатель
-    founders: Создатели
-    coreteam: Основная команда
-    chief_executive_officer: Директор компании
-    chief_strategy_officer: Директор по стратегии
-    chief_operations_officer: Операционный директор
-    chief_communications_officer: Главный сотрудник по связям
-    chief_design_officer: Главный Дизайн сотрудник
-    full_stack_developer: Полное Стек Разработчик
